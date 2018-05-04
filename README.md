@@ -5,6 +5,10 @@
 It is set to count up to a number input by the user whilst displaying numbers divisible by ;3 as ping,5 as pong 15 as pingpong.It also includes an about the pingpong and also rules to the game
 ## Setup/Installation Requirements
 * none required
+##specifications
+It can count up to the provided number
+     #Example input - 3
+     #Example output - 1,2,ping
 ## Known Bugs
 The background image my have issues fitting on different devices
 ## Technologies Used

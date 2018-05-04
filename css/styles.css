@@ -5,7 +5,7 @@
   color: #ffd700;
 }
 body{
-  background-image: url("file:///home/neville/Documents/moringa-school-projects/ping-pong/images/machine.jpg");
+  background-image: url("../images/machine.jpg");
   background-size: contain;
 }
 .col-md-5{
