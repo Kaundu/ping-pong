@@ -8,21 +8,21 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Document</title>
+  <title>Ping-pong</title>
 </head>
 <body>
-  <div class="jumbotron">
+  <div class="jumbotron" id="trn">
     <h1><strong>PING-PONG</strong></h1>
   </div>
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-3">
-        <h2><strong>About PING-PONG</strong></h2>
-        <h3>created by:</h3>
+        <h2 id="about" ><strong>About PING-PONG</strong></h2>
+        <h3 class="posh">created by:</h3>
         <p> Neville Kaundu</p>
-        <h3> Github Username/ URL:</h3>
+        <h3 class="posh"> Github Username/ URL:</h3>
         <p> Kaundu</p>
-        <h3>Level 2 test for:</h3>
+        <h3 class="posh">Level 2 test for:</h3>
         <p> Java</p>
       </div>
       <div class="col-md-5">
@@ -35,13 +35,14 @@
           </ul>
         </div>
       <div class="col-md-4">
-        <h2><strong>Let's Play!</strong></h2>
-        <h3> Rules</h3>
+        <h2 id="lts" ><strong>Let's Play!</strong></h2>
+        <h3 id="trd"> Rules</h3>
         <p>Ping-pong will count up to your number from 1 with the following exceptions;</p>
-        <ol>
+        <ol id="soo">
           <li>Numbers divisible by 3 become 'ping'</li>
           <li>Numbers divisible by 5 become 'pong'</li>
           <li>Numbers divisible by 15 become 'ping-pong'</li>
+          <li>Negative numbers do <strong>NOT</strong>work</li>
         </ol>
       </div>
 
