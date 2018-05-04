@@ -1,28 +1,31 @@
 //User Interface
-var countTo = parseInt(prompt("Enter number:"));
-var result = '';
-condition();
+var num;
+$(document).ready(function(){
+  $("form").submit(function(event){
+    num= parseInt($("input#sect").val());
+
+    condition();
+    $("input#sect").val('');
+    event.preventDefault();
+  });
+});
+
 
 
 
 
 //Business Logic
 function condition() {
-  for (var i = 1; i <= countTo; i++) {
+    $('.data').text('');
+  for (var i = 1; i <= num; i++) {
     if ((i % 3 == 0) && (i % 5 == 0)) {
-      result += 'pingpong';
+      $('.data').append('<li>pingpong</li>') ;
     } else if (i % 5 == 0) {
-      result += 'pong';
+      $('.data').append('<li>pong</li>') ;
     } else if (i % 3 == 0) {
-      result += 'ping';
+        $('.data').append('<li>ping</li>') ;
     } else {
-      result += i.toString();
+        $('.data').append('<li>'+i.toString()+'</li>') ;
     }
-    if (i != countTo) {
-      result += ',';
-    }
-
   }
-  alert(result);
-  result = '';
 }
