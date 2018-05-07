@@ -32,3 +32,6 @@ body{
 #trn{
   background-color: rgba(255, 255, 0 ,0.34);
 }
+#shi{
+  image-orientation: 50px , 50px;
+}
